@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Admin</Author>
+  <LastAuthor>Windows User</LastAuthor>
+  <Revision>13</Revision>
+  <TotalTime>1208</TotalTime>
+  <Created>2018-10-05T13:06:23Z</Created>
+  <LastSaved>2018-11-21T19:57:40Z</LastSaved>
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>6120</WindowHeight>
+  <WindowWidth>16170</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Liberation Sans" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Liberation Mono" x:Family="Modern" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Font ss:FontName="Liberation Sans" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Full dataset convolution">
+  <Table ss:ExpandedColumnCount="12" ss:ExpandedRowCount="6" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="14.25">
+   <Column ss:AutoFitWidth="0" ss:Width="63.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="95.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="204.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="179.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="63.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="136.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="155.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="143.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="63.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="108.75"/>
+   <Row ss:Index="2">
+    <Cell ss:Index="2"><Data ss:Type="String">DATASET</Data></Cell>
+    <Cell><Data ss:Type="String">Time for feature reduction in seconds</Data></Cell>
+    <Cell><Data ss:Type="String">number of test samples</Data></Cell>
+    <Cell><Data ss:Type="String">image size</Data></Cell>
+    <Cell><Data ss:Type="String">Step 1</Data></Cell>
+    <Cell><Data ss:Type="String">Step 2</Data></Cell>
+    <Cell><Data ss:Type="String">Step 3</Data></Cell>
+    <Cell><Data ss:Type="String">Step 4</Data></Cell>
+    <Cell><Data ss:Type="String">output vector size (flattened)</Data></Cell>
+    <Cell ss:Index="12"><Data ss:Type="String">AE time</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">mnist</Data></Cell>
+    <Cell><Data ss:Type="Number">74.81</Data></Cell>
+    <Cell><Data ss:Type="Number">50000</Data></Cell>
+    <Cell><Data ss:Type="String">28*28*1</Data></Cell>
+    <Cell><Data ss:Type="String">Convolution with kernel 3*3</Data></Cell>
+    <Cell><Data ss:Type="String">Convolution with kernel 3*3</Data></Cell>
+    <Cell><Data ss:Type="String">Max Pooling with pool size 2*2</Data></Cell>
+    <Cell><Data ss:Type="String">Flatten</Data></Cell>
+    <Cell><Data ss:Type="Number">144</Data></Cell>
+    <Cell ss:Index="12"><Data ss:Type="Number">47.23</Data></Cell>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:Index="2"><Data ss:Type="String">cifar10</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">64.400300000000001</Data></Cell>
+    <Cell><Data ss:Type="Number">50000</Data></Cell>
+    <Cell><Data ss:Type="String">32*32*3</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Convolution with kernel 3*3</Data></Cell>
+    <Cell><Data ss:Type="String">Convolution with kernel 3*3</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Max Pooling with pool size 2*2</Data></Cell>
+    <Cell><Data ss:Type="String">Flatten</Data></Cell>
+    <Cell><Data ss:Type="Number">196</Data></Cell>
+    <Cell ss:Index="12"><Data ss:Type="Number">42.21</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Fashion-mnist</Data></Cell>
+    <Cell><Data ss:Type="Number">68.899000000000001</Data></Cell>
+    <Cell><Data ss:Type="Number">60000</Data></Cell>
+    <Cell><Data ss:Type="String">28*28*1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Convolution with kernel 3*3</Data></Cell>
+    <Cell><Data ss:Type="String">Convolution with kernel 3*3</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Max Pooling with pool size 2*2</Data></Cell>
+    <Cell><Data ss:Type="String">Flatten</Data></Cell>
+    <Cell><Data ss:Type="Number">144</Data></Cell>
+    <Cell ss:Index="12"><Data ss:Type="Number">45.33</Data></Cell>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:Index="2"><Data ss:Type="String">cifar100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">74.444000000000003</Data></Cell>
+    <Cell><Data ss:Type="Number">50000</Data></Cell>
+    <Cell><Data ss:Type="String">32*32*3</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Convolution with kernel 3*3</Data></Cell>
+    <Cell><Data ss:Type="String">Convolution with kernel 3*3</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Max Pooling with pool size 2*2</Data></Cell>
+    <Cell><Data ss:Type="String">Flatten</Data></Cell>
+    <Cell><Data ss:Type="Number">196</Data></Cell>
+    <Cell ss:Index="12"><Data ss:Type="Number">47.25</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0" x:Data="&amp;C&amp;A"/>
+    <Footer x:Margin="0" x:Data="&amp;CPage &amp;P"/>
+    <PageMargins x:Bottom="0.39370078740157477" x:Left="0" x:Right="0"
+     x:Top="0.39370078740157477"/>
+   </PageSetup>
+   <Zoom>66</Zoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>4</ActiveRow>
+     <ActiveCol>14</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="dataset into partitions">
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="38" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="14.25">
+   <Column ss:AutoFitWidth="0" ss:Width="87"/>
+   <Column ss:AutoFitWidth="0" ss:Width="225.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="175.5"/>
+   <Row ss:Index="7">
+    <Cell><Data ss:Type="String">Dataset</Data></Cell>
+    <Cell><Data ss:Type="String">number of partitions</Data></Cell>
+    <Cell><Data ss:Type="String">Reduction time in seconds</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MNIST</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">38.131999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MNIST</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">19.331</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MNIST</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">11.301</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MNIST</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">8.7959999999999994</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MNIST</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">7.0030000000000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MNIST</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">4.3840000000000003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MNIST</Data></Cell>
+    <Cell><Data ss:Type="Number">32</Data></Cell>
+    <Cell><Data ss:Type="Number">2.1659999999999999</Data></Cell>
+   </Row>
+   <Row ss:Index="16">
+    <Cell><Data ss:Type="String">CIFAR-10</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">31.713000000000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CIFAR-10</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">15.795</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CIFAR-10</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">11.499000000000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CIFAR-10</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">7.7990000000000004</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CIFAR-10</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">7.1909999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CIFAR-10</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">4.3079999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CIFAR-10</Data></Cell>
+    <Cell><Data ss:Type="Number">32</Data></Cell>
+    <Cell><Data ss:Type="Number">1.9730000000000001</Data></Cell>
+   </Row>
+   <Row ss:Index="24">
+    <Cell><Data ss:Type="String">Fashion-MNIST</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">37.223999999999997</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fashion-MNIST</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">21.274999999999999</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fashion-MNIST</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">13.538</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fashion-MNIST</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">9.9083000000000006</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fashion-MNIST</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">7.3630000000000004</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fashion-MNIST</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">5.1820000000000004</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fashion-MNIST</Data></Cell>
+    <Cell><Data ss:Type="Number">32</Data></Cell>
+    <Cell><Data ss:Type="Number">2.2530000000000001</Data></Cell>
+   </Row>
+   <Row ss:Index="32" ss:Height="15">
+    <Cell><Data ss:Type="String">CIFAR-100</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">45.094999999999999</Data></Cell>
+   </Row>
+   <Row ss:Height="15">
+    <Cell><Data ss:Type="String">CIFAR-100</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">20.382999999999999</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CIFAR-100</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">12.965999999999999</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CIFAR-100</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">11.484</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CIFAR-100</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">6.8780000000000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CIFAR-100</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">4.5309999999999997</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CIFAR-100</Data></Cell>
+    <Cell><Data ss:Type="Number">32</Data></Cell>
+    <Cell><Data ss:Type="Number">2.262</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0" x:Data="&amp;C&amp;A"/>
+    <Footer x:Margin="0" x:Data="&amp;CPage &amp;P"/>
+    <PageMargins x:Bottom="0.39370078740157477" x:Left="0" x:Right="0"
+     x:Top="0.39370078740157477"/>
+   </PageSetup>
+   <TopRowVisible>18</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>35</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
